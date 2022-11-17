@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../../dist/output.css" rel="stylesheet" />
-    <title>Eastside Canary</title>
-  </head>
-  <body class="container mx-auto h-screen overflow-hidden px-4 lg:px-10">
-    <!-- navigation bar -->
-    <nav class="flex justify-between py-5">
-      <h1>Eastside Canary</h1>
-      <ul class="hidden space-x-14 md:flex">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../../dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../input.css" />
+  <title>Eastside Canary</title>
+</head>
+
+<body class="container mx-auto h-screen px-4 lg:px-10">
+  <!-- navigation bar -->
+  <nav class="py-4 md:p-4">
+    <div class="flex justify-between">
+      <h1 class="text-lg font-medium">Eastside Canary</h1>
+
+      <ul class="hidden items-center justify-center md:flex md:space-x-14">
         <li>
           <a href="../../index.html">Home</a>
         </li>
@@ -25,38 +30,180 @@
           <a href="contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
 
-    <!-- footer -->
-    <footer class="mt-16 border-t-2 border-gray-500 p-6">
-      <div class="flex justify-between">
+      <button id="button" class="inline-block text-lg md:hidden">menu</button>
+    </div>
+
+    <div class="fixed -left-full z-20 h-full w-full bg-white transition-all md:hidden" id="nav">
+      <ul class="flex h-full flex-col items-center justify-center space-y-6 text-4xl md:space-x-14">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="properties.html">Properties</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Our Properties -->
+  <section class="rounded-lg bg-gray-300 p-4 md:p-8">
+    <h1 class="text-5xl md:text-6xl">Our Properties</h1>
+  </section>
+
+  <!-- property 1 -->
+  <div class="mt-16 flex flex-wrap md:flex-nowrap md:space-x-14">
+    <div class="md:w-8/12">
+      <img src="../assets/img/summerhill.jpg" alt="" class="h-96 w-full rounded-lg object-cover" />
+    </div>
+    <div class="mt-6 md:mt-0 md:w-4/12">
+      <p class="text-gray-500">Available Now</p>
+      <h2 class="text-4xl">Summerhill</h2>
+      <p class="mt-3 text-gray-700">Jln. Salemba 1, Jakarta Pusat</p>
+      <div class="mt-8 flex justify-between">
         <div>
-          <h1 class="text-2xl">Eastside Canary</h1>
-          <p>Comfort is our priority for customer</p>
-          <h2 class="mt-20">2022 © Eastside Canary</h2>
+          <p class="text-gray-700">beds</p>
+          <p>4</p>
         </div>
-        <div class="flex space-x-16">
-          <div class="flex flex-col text-gray-700">
-            <h2 class="text-2xl text-black">Menu</h2>
-            <a href="../../index.html" class="mt-2 hover:underline">Home</a>
-            <a href="properties.html" class="hover:underline">Properties</a>
-            <a href="about.html" class="hover:underline">About</a>
-            <a href="contact.html" class="hover:underline">Contact</a>
-          </div>
-          <div class="flex flex-col text-gray-700">
-            <h2 class="text-2xl text-black">Contact</h2>
-            <a href="#" class="mt-2 hover:underline">Whatsapp</a>
-            <a href="#" class="hover:underline">Telegram</a>
-            <a href="#" class="hover:underline">Email</a>
-          </div>
-          <div class="flex flex-col text-gray-700">
-            <h2 class="text-2xl text-black">Social</h2>
-            <a href="#" class="mt-2 hover:underline">Instagram</a>
-            <a href="#" class="hover:underline">Twitter</a>
-            <a href="#" class="hover:underline">Linkedin</a>
-          </div>
+        <div>
+          <p class="text-gray-700">bath</p>
+          <p>2</p>
+        </div>
+        <div>
+          <p class="text-gray-700">luas</p>
+          <p>924 - 1620</p>
         </div>
       </div>
-    </footer>
-  </body>
+      <p class="mt-8">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam et,
+        vitae tenetur ullam laudantium hic voluptatum magni eaque a officia!
+      </p>
+      <a href="detail1.html" class="group mt-10 inline-block font-medium hover:underline">See the details
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="ml-1 inline-block h-8 transform rounded-full bg-gray-300 p-2 transition-all group-hover:rotate-45">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="my-20 border-t-2 border-gray-300 md:my-28"></div>
+
+  <!-- property 2 -->
+  <div class="mt-16 flex flex-wrap-reverse md:flex-nowrap md:space-x-14">
+    <div class="md:w-4/12">
+      <p class="text-gray-500">Available Now</p>
+      <h2 class="text-4xl">Hive</h2>
+      <p class="mt-3 text-gray-700">Jln. Salemba 2, Jakarta Pusat</p>
+      <div class="mt-8 flex justify-between">
+        <div>
+          <p class="text-gray-700">beds</p>
+          <p>4</p>
+        </div>
+        <div>
+          <p class="text-gray-700">bath</p>
+          <p>2</p>
+        </div>
+        <div>
+          <p class="text-gray-700">luas</p>
+          <p>924 - 1620</p>
+        </div>
+      </div>
+      <p class="mt-8">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam et,
+        vitae tenetur ullam laudantium hic voluptatum magni eaque a officia!
+      </p>
+      <a href="detail2.html" class="group mt-10 inline-block font-medium hover:underline">See the details
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="ml-1 inline-block h-8 transform rounded-full bg-gray-300 p-2 transition-all group-hover:rotate-45">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </a>
+    </div>
+    <div class="mb-6 md:mt-0 md:w-8/12">
+      <img src="../assets/img/hive.jpg" alt="" class="h-96 w-full rounded-lg object-cover" />
+    </div>
+  </div>
+
+  <div class="my-20 border-t-2 border-gray-300 md:my-28"></div>
+
+  <!-- property 3 -->
+  <div class="mt-16 flex flex-wrap md:flex-nowrap md:space-x-14">
+    <div class="md:w-8/12">
+      <img src="../assets/img/canary.jpg" alt="" class="h-96 w-full rounded-lg object-cover" />
+    </div>
+    <div class="mt-6 md:mt-0 md:w-4/12">
+      <p class="text-gray-500">Sold Out</p>
+      <h2 class="text-4xl">Canary</h2>
+      <p class="mt-3 text-gray-700">Jln. Salemba 3, Jakarta Pusat</p>
+      <div class="mt-8 flex justify-between">
+        <div>
+          <p class="text-gray-700">beds</p>
+          <p>4</p>
+        </div>
+        <div>
+          <p class="text-gray-700">bath</p>
+          <p>2</p>
+        </div>
+        <div>
+          <p class="text-gray-700">luas</p>
+          <p>924 - 1620</p>
+        </div>
+      </div>
+      <p class="mt-8">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam et,
+        vitae tenetur ullam laudantium hic voluptatum magni eaque a officia!
+      </p>
+      <a href="detail3.html" class="group mt-10 inline-block font-medium hover:underline">See the details
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="ml-1 inline-block h-8 transform rounded-full bg-gray-300 p-2 transition-all group-hover:rotate-45">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="mt-16 border-t-2 border-gray-500 p-4 md:p-6">
+    <div class="md:flex md:justify-between">
+      <div>
+        <h1 class="text-2xl">Eastside Canary</h1>
+        <p>Comfort is our priority for customer</p>
+        <h2 class="mt-20 hidden md:block">2022 © Eastside Canary</h2>
+      </div>
+      <div class="mt-10 flex justify-between md:mt-0 md:space-x-16">
+        <div class="flex flex-col text-gray-700">
+          <h2 class="text-2xl text-black">Menu</h2>
+          <a href="../../index.html" class="mt-2 hover:underline">Home</a>
+          <a href="properties.html" class="hover:underline">Properties</a>
+          <a href="about.html" class="hover:underline">About</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </div>
+        <div class="flex flex-col text-gray-700">
+          <h2 class="text-2xl text-black">Contact</h2>
+          <a href="#" class="mt-2 hover:underline">Whatsapp</a>
+          <a href="#" class="hover:underline">Telegram</a>
+          <a href="#" class="hover:underline">Email</a>
+        </div>
+        <div class="flex flex-col text-gray-700">
+          <h2 class="text-2xl text-black">Social</h2>
+          <a href="#" class="mt-2 hover:underline">Instagram</a>
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Linkedin</a>
+        </div>
+      </div>
+      <h2 class="mt-14 block text-center md:hidden">
+        2022 © Eastside Canary
+      </h2>
+    </div>
+  </footer>
+  <script src="../scripts/index.js"></script>
+</body>
+
 </html>
